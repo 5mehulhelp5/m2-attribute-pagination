@@ -1,17 +1,17 @@
 <?php
 /**
- * Copyright © Q-Solutions Studio: eCommerce Nanobots. All rights reserved.
+ * Copyright © qoliber. All rights reserved.
  * @author      Jakub Winkler <jwinkler@qsolutionsstudio.com>
  *
- * @category    Nanobots
- * @package     Nanobots_AttributeOptionPager
+ * @category    Qoliber
+ * @package     Qoliber_AttributeOptionPager
  */
 
 use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'Nanobots_AttributeOptionPager',
+    'Qoliber_AttributeOptionPager',
     __DIR__
 );
 

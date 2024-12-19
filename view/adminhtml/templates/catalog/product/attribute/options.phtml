@@ -1,13 +1,13 @@
 <?php
 /**
- * Copyright © Q-Solutions Studio: eCommerce Nanobots. All rights reserved.
+ * Copyright © qoliber. All rights reserved.
  * @author      Jakub Winkler <jwinkler@qsolutionsstudio.com>
  *
- * @category    Nanobots
- * @package     Nanobots_AttributeOptionPager
+ * @category    Qoliber
+ * @package     Qoliber_AttributeOptionPager
  */
 
-use Nanobots\AttributeOptionPager\Block\Adminhtml\Attribute\Edit\Options\Options;
+use Qoliber\AttributeOptionPager\Block\Adminhtml\Attribute\Edit\Options\Options;
 
 /** @var $block Options */
 $stores = $block->getStoresSortedBySortOrder();
@@ -128,7 +128,7 @@ $stores = $block->getStoresSortedBySortOrder();
                     "element": "required-dropdown-attribute-unique",
                     "message": "<?= $block->escapeHtml(__("The value of Admin must be unique.")) ?>"
                 },
-                "Nanobots_AttributeOptionPager/js/pager": {
+                "Qoliber_AttributeOptionPager/js/pager": {
                     "ajaxUrlValue": {}
                 }
             }

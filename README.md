@@ -13,12 +13,12 @@ Simple Magento 2 module that adds pagination to attribute options in admin panel
 Installation (in your Magento 2 directory):\
 **THIS PACKAGE REQUIRES COMPOSER 2.x** 
 ```bash
-composer require enanobots/m2-attribute-pagination  --ignore-platform-reqs
+composer require qoliber/m2-attribute-pagination  --ignore-platform-reqs
 ```
 
 activate the module:
 ```bash
-php bin/magento module:enable Nanobots_AttributeOptionPager
+php bin/magento module:enable Qoliber_AttributeOptionPager
 ```
 
 And run upgrade command:

@@ -1,15 +1,15 @@
 <?xml version="1.0" ?>
 <!--
 /**
- * Copyright © Q-Solutions Studio: eCommerce Nanobots. All rights reserved.
+ * Copyright © qoliber. All rights reserved.
  * @author      Jakub Winkler <jwinkler@qsolutionsstudio.com>
  *
- * @category    Nanobots
- * @package     Nanobots_AttributeOptionPager
+ * @category    Qoliber
+ * @package     Qoliber_AttributeOptionPager
  */
  -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-	<module name="Nanobots_AttributeOptionPager">
+	<module name="Qoliber_AttributeOptionPager">
 		<sequence>
 			<module name="Magento_Backend"/>
 			<module name="Magento_Eav"/>

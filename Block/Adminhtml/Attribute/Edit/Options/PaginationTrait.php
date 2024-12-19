@@ -1,15 +1,15 @@
 <?php
 /**
- * Copyright © Q-Solutions Studio: eCommerce Nanobots. All rights reserved.
+ * Copyright © qoliber. All rights reserved.
  * @author      Jakub Winkler <jwinkler@qsolutionsstudio.com>
  *
- * @category    Nanobots
- * @package     Nanobots_AttributeOptionPager
+ * @category    Qoliber
+ * @package     Qoliber_AttributeOptionPager
  */
 
 declare(strict_types=1);
 
-namespace Nanobots\AttributeOptionPager\Block\Adminhtml\Attribute\Edit\Options;
+namespace Qoliber\AttributeOptionPager\Block\Adminhtml\Attribute\Edit\Options;
 
 use Magento\Eav\Model\Entity\Attribute\AbstractAttribute;
 use Magento\Eav\Model\ResourceModel\Entity\Attribute\Option\Collection;
