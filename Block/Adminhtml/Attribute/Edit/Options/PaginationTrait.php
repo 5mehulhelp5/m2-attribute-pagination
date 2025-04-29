@@ -17,14 +17,13 @@ use Magento\Eav\Model\ResourceModel\Entity\Attribute\Option\Collection;
 trait PaginationTrait
 {
     /** @var int  */
-    public const DEFAULT_PAGE = 1;
+    protected static int $defaultPage = 1;
 
     /** @var int  */
-    public const DEFAULT_LIMIT = 20;
+    protected static int $defaultLimit = 20;
 
     /** @var int[]  */
-    public const LIMIT = [20, 30, 50, 100, 200];
-
+    protected static array $limit = [20, 30, 50, 100, 200];
 
     /**
      * Retrieve option values collection
@@ -48,8 +47,8 @@ trait PaginationTrait
             )->setPositionOrder(
                 'asc',
                 true
-            )->setPageSize($this->getRequest()->getParam('limit') ?? self::DEFAULT_LIMIT)
-                ->setCurPage($this->getRequest()->getParam('page') ?? self::DEFAULT_PAGE)
+            )->setPageSize($this->getRequest()->getParam('limit') ?? static::$defaultLimit)
+                ->setCurPage($this->getRequest()->getParam('page') ?? static::$defaultPage)
                 ->load();
         }
     }
@@ -153,7 +152,7 @@ trait PaginationTrait
         if ($this->getRequest()->getParam('page')) {
             return (int)$this->getRequest()->getParam('page');
         }
-        return self::DEFAULT_PAGE;
+        return static::$defaultPage;
     }
 
     /**
@@ -164,7 +163,7 @@ trait PaginationTrait
         if ($this->getRequest()->getParam('limit')) {
             return (int)$this->getRequest()->getParam('limit');
         }
-        return self::DEFAULT_LIMIT;
+        return static::$defaultLimit;
     }
 
     /**
@@ -172,7 +171,7 @@ trait PaginationTrait
      */
     public function getLimits(): array
     {
-        return self::LIMIT;
+        return static::$limit;
     }
 
     /**
@@ -183,7 +182,7 @@ trait PaginationTrait
         $attribute = $this->getAttributeObject();
         return $this->_attrOptionCollectionFactory->create()->setAttributeFilter(
             $attribute->getId()
-        )->setPageSize($this->getRequest()->getParam('limit') ?? self::DEFAULT_LIMIT)
+        )->setPageSize($this->getRequest()->getParam('limit') ?? static::$defaultLimit)
             ->getLastPageNumber();
 
     }
